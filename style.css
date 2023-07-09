@@ -1,0 +1,41 @@
+.container-fluid{
+    background-color: black;
+}
+
+.stacked-cards {
+    height: 300px;
+}
+  
+.card-custom {
+    width: 200px;
+    height: 200px;
+    color: white;
+    transform: translateY(0);
+    transition: transform 0.3s;
+}
+
+.card-custom:nth-child(1){
+    background: url(https://picsum.photos/800);
+}
+
+.card-custom:nth-child(2){
+    background: url(https://picsum.photos/801);
+}
+
+.card-custom:nth-child(3){
+    background: url(https://picsum.photos/802);
+}
+
+.card-custom:nth-child(1), .card-custom:nth-child(2), .card-custom:nth-child(3){
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+  
+.card-custom:not(:last-child) {
+    margin-right: -50px;
+}
+  
+.card-custom:hover {
+    transform: translateY(-20px);
+}
